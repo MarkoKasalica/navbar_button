@@ -1,0 +1,125 @@
+:root {
+    --primary:#8c38ff;
+    --light:#EEEEEE ;
+    --dark: #212121; 
+}
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: white;
+background-color: #8c38ff;;
+}
+
+
+
+
+.containertekst {
+    display: inline-block;
+width: min-content;
+}
+
+.typewriter h1 {
+    position: relative;
+    overflow: hidden;
+     /* Ensures the content is not revealed until the animation */
+    border-right: .17em solid#8c38ff;; /* The typwriter cursor */
+ white-space: nowrap;/* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    
+  }
+h1 {
+position: relative;
+    margin-top: 250px;
+    margin-left: 40px;
+    margin-right: 60px;
+
+
+    color: black;
+
+}
+
+.container {
+    max-height: 1200px;
+   margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--dark);
+
+
+}
+button {
+    padding: 20px 40px;
+    font-size: 25px;
+    background-color: #8c38ff;
+    color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    letter-spacing: 4px;
+
+ 
+}
+button:hover {
+    transform: scale(1.1);
+    transition: 0.08s 0.08s;
+    background-color: fuchsia;
+    color: lightgoldenrodyellow;
+    box-shadow: 00px 0px 20px 10px mediumpurple;
+    letter-spacing: 5px;
+}
+
+p {
+    background-color: var(--dark);
+
+    margin-right:  -120px;
+}
+a {
+    text-decoration: none;
+    margin: 0 45px;
+    font-size: 20px;
+    background-color: var(--dark);
+
+}
+a:hover {
+    background-color: #8c38ff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    z-index: 99;
+    background-color: var(--dark);
+   padding: 50px 140px;
+   border-bottom: 3px solid white;
+}
+
+.navbarlist {
+display: flex;
+align-items: center;
+background-color: var(--dark);
+
+}
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #6a00ff;}
+  }
